@@ -1,0 +1,106 @@
+/* src/pages/MovieDetail.css */
+
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    background-color: var(--color-bg);
+    color: var(--color-light);
+}
+
+@media (min-width: 768px) {
+    .movie-detail {
+        flex-direction: row;
+        gap: var(--spacing-xl);
+    }
+}
+
+.detail-poster img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.detail-info {
+    flex: 1;
+    max-width: 800px;
+}
+
+.detail-title {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 800;
+}
+
+.detail-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+}
+
+.detail-genres {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 500;
+}
+
+.detail-description {
+    line-height: 1.7;
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.05rem;
+}
+
+.detail-actions {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.btn-play {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.btn-play:hover {
+    background-color: #ff5252;
+    transform: scale(1.03);
+}
+
+.btn-list {
+    background: transparent;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-list:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .movie-detail {
+        padding: var(--spacing-md);
+    }
+
+    .detail-title {
+        font-size: 1.8rem;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+}

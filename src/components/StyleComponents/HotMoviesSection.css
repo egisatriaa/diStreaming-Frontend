@@ -1,0 +1,35 @@
+/* src/components/HotMoviesSection.css */
+
+.hot-movies-section {
+    padding: 0 var(--spacing-md) var(--spacing-xl);
+}
+
+.hot-section-title {
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+    background: linear-gradient(90deg, #ff6b6b, #582167);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.hot-movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .hot-movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .hot-movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
