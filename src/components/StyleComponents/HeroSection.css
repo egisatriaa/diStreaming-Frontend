@@ -1,5 +1,3 @@
-/* src/components/HeroSection.css */
-
 .hero-section {
     position: relative;
     height: 60vh;
@@ -14,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    filter: brightness(0.4); /* Gelapkan gambar agar teks terbaca */
+    filter: brightness(0.4);
     z-index: 1;
 }
 
